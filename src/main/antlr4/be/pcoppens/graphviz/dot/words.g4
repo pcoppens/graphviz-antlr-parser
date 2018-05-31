@@ -2,10 +2,10 @@ lexer grammar words;
 // lexer rules
 
 // Comments -> ignored
-COMMENT: '/*' .*? '*/' -> skip;
-COMMENT2: '//' .*? NEWLINE -> skip;
+COMMENTS        : ('/*' .*? '*/' | '//' ~'\n'* '\n' ) -> skip;
 // Whitespaces -> ignored
 NEWLINE: '\r'? '\n'  -> skip ;
+WS: [ \t]+ -> skip ;
 
 STRICT : 'strict';
 GRAPH: 'graph';
@@ -23,8 +23,11 @@ C: 'c';
 HTML: '<'.*? '>';
 DOUBLE_QUOTED: '"'.*? '"';
 NUMERAL:('-')?('.'(DIGIT)+ | (DIGIT)+ ('.'(DIGIT)*)? );
-STRING: (LETTER|ULETTER|UNDERSCORE) (LETTER|ULETTER|UNDERSCORE | DIGIT)* ;
+STRING: (LETTER|UNDERSCORE) (LETTER|UNDERSCORE | DIGIT)* ;
 
-fragment LETTER: [a-zA-Z] ;
+fragment LETTER: 'A'..'Z' | 'a'..'z' ;
 fragment DIGIT: '0'..'9' ;
-fragment ULETTER: [\u200D - \u300D];
+//fragment ULETTER: [\u200D - \u300D];
+
+// handle characters which failed to match any other token
+ErrorCharacter : . ;

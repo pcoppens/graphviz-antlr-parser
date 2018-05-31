@@ -1,20 +1,17 @@
 package be.pcoppens.graphviz.dot.parser;
 
-import be.pcoppens.graphviz.dot.GraphvizDotLexer;
-import be.pcoppens.graphviz.dot.GraphvizDotParser;
 import org.apache.commons.cli.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.IOException;
-import org.antlr.v4.runtime.*;
-import org.antlr.v4.runtime.tree.ParseTreeWalker;
 
 import static com.google.common.base.Preconditions.checkArgument;
 
 /**
- * @Overview
+ * @Overview main entry to verify a dot file.
+ * @specfield inputFile. the file to verify.
  */
 public class Main {
     private static final Logger LOG = LoggerFactory.getLogger(Main.class);
@@ -22,23 +19,15 @@ public class Main {
     private static final String HELP = "h";
     private static final String INPUT = "i";
 
-    private File inputFile;
-
     /**
      * The command line options.
      */
-    private Options options;
+    private final Options options;
+
+    private static File inputFile;
 
     /**
-     *
-     * @param inputFile
-     */
-    public Main(File inputFile) {
-        this.inputFile= inputFile;
-    }
-
-    /**
-     *
+     * @modifies: the options
      */
     private Main() {
         // Create command line options
@@ -54,7 +43,7 @@ public class Main {
     }
 
     /**
-     * Prints help message with this options.
+     * @effects: Prints help message with this options.
      */
     private void printHelpMessage() {
         HelpFormatter formatter = new HelpFormatter();
@@ -64,46 +53,14 @@ public class Main {
     }
 
     /**
-     *
-     * @throws IOException
-     */
-    public void parse() throws IOException {
-        LOG.debug("Parsing input ... ");
-        GraphvizDotParser.GraphContext tree = parse(CharStreams.fromFileName(inputFile.getAbsolutePath()));
-        LOG.debug("Parsing input: done.");
-    }
-
-    /**
-     *
-     * @param charStreams
-     * @return
-     */
-    private GraphvizDotParser.GraphContext parse(CharStream charStreams) {
-        // Create the token stream
-        CommonTokenStream tokens = new CommonTokenStream(new GraphvizDotLexer(charStreams));
-        // Intialise parser
-        GraphvizDotParser parser = new GraphvizDotParser(tokens);
-        // Set error listener to adoc implementation
-        parser.removeErrorListeners();
-        parser.addErrorListener(ConsoleErrorListener.INSTANCE);
-        // Launch parsing
-        GraphvizDotParser.GraphContext tree;
-        try {
-            tree = parser.graph();
-        } catch (RecognitionException e) {
-            throw new RuntimeException("Error while retrieving parsing tree!");
-        }
-        return tree;
-    }
-
-    /**
-     * Initialise the input compiler using the given input line.
-     *
-     * @throws Exception If one of the three required arguments is not provided.
+     * @requires a not null Line.
+     * @modifies: set the inputFile with the line input argument.
+     * @effects: parse the given input line.
+     * @throws Exception If one of the required arguments is not provided.
      */
     private void initialise(CommandLine line) throws Exception {
         LOG.debug("Initialisation");
-        // Check that the arguments are there
+        // Check that the arguments
         if (!line.hasOption(INPUT)) {
             throw new ParseException(String.format("Option %s is mandatory!", INPUT));
         }
@@ -114,16 +71,16 @@ public class Main {
     }
 
     /**
+     * @effects Verify is the input file is a valid dot file according graphviz grammar.
      *
-     * @param args
      */
     public static void main( String[] args )
     {
         Main main = new Main();
-        CommandLineParser parser = new DefaultParser();
+        CommandLineParser commandLineParser = new DefaultParser();
         CommandLine line = null;
         try {
-            line = parser.parse(main.options, args);
+            line = commandLineParser.parse(main.options, args);
         } catch (ParseException ex) {
             LOG.error("Error while parsing command line!", ex);
             main.printHelpMessage();
@@ -135,10 +92,9 @@ public class Main {
             } else {
                 // Else start parsing
                 try {
-                    main.initialise(line);
-                    main.parse();
-                } catch (Exception e) {
-                    LOG.error("Exception occured during compilation!", e);
+                    new Parser(inputFile).parse();
+                } catch (IOException e) {
+                    LOG.error("Cannot read the file: ", e);
                 }
             }
         }

@@ -2,8 +2,10 @@ grammar GraphvizDot; //from grammar https://graphviz.gitlab.io/_pages/doc/info/l
 import words;
 //  parser rules
 
-graph	:	(STRICT)? (GRAPH | DIGRAPH) (id)? '{' stmt_list '}' EOF ;
-
+graph	:
+	(STRICT)?
+	(GRAPH|DIGRAPH)WS* (id)?
+	WS*'{' stmt_list '}' EOF ;
 
 stmt_list
    : ( stmt (';')? )* ;
@@ -25,5 +27,6 @@ port	:	':' id (':' compass_pt)? |	':' compass_pt ;
 
 subgraph	:	(SUBGRAPH (id)? )? '{' stmt_list '}' ;
 compass_pt	:	(N | N E | E | S E | S | S W | W | N W | C | UNDERSCORE) ;
-edgeOp: '-->' | '--';
+edgeOp: '--' |'->';
 id: STRING | NUMERAL | DOUBLE_QUOTED | HTML;
+
