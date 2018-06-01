@@ -95,6 +95,8 @@ public class Main {
                     new Parser(inputFile).parse();
                 } catch (IOException e) {
                     LOG.error("Cannot read the file: ", e);
+                } catch (ParsingException e) {
+                    LOG.error(e.getLocalizedMessage());
                 }
             }
         }

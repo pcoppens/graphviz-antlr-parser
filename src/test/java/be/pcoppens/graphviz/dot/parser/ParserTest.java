@@ -11,6 +11,7 @@ import static org.junit.Assert.*;
 
 public class ParserTest {
     public static final String FILENAME= "/simpleFile.dot";
+    public static final String FAIL= "/failFile.dot";
 
     @Test
     public void repOk() throws URISyntaxException {
@@ -36,9 +37,22 @@ public class ParserTest {
     }
 
     @Test
-    public void parse() throws URISyntaxException, IOException {
+    public void parse() throws URISyntaxException, IOException, ParsingException {
         //setup
         File inputFile = new File(ParserTest.class.getResource(FILENAME).toURI());
+        Parser parser= new Parser(inputFile);
+        //exercice
+        GraphvizDotParser.GraphContext graphContext= parser.parse();
+        //verify
+        assertNotNull(graphContext);
+        //teardown
+    }
+
+
+    @Test(expected = ParsingException.class)
+    public void parseFail() throws URISyntaxException, IOException, ParsingException {
+        //setup
+        File inputFile = new File(ParserTest.class.getResource(FAIL).toURI());
         Parser parser= new Parser(inputFile);
         //exercice
         GraphvizDotParser.GraphContext graphContext= parser.parse();
