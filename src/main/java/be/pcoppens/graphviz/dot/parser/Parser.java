@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Objects;
 
 
 /**
@@ -22,7 +23,6 @@ public class Parser {
 
     private final File inputFile;
     private final ErrorListener errorListener= new ErrorListener();
-
 
     /**
      * Create a Parser for the inputFile parameter
@@ -40,8 +40,6 @@ public class Parser {
             return false;
         return inputFile.isFile();
     }
-
-
 
     /**
      * @requires inputFile is not null.
@@ -64,5 +62,18 @@ public class Parser {
         if(errorListener.isError())
             throw new ParsingException("Error in parsing "+ inputFile.getName());
         return tree;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Parser parser = (Parser) o;
+        return Objects.equals(inputFile, parser.inputFile);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(inputFile);
     }
 }
