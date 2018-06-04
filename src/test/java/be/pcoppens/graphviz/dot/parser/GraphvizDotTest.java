@@ -40,7 +40,7 @@ public class GraphvizDotTest {
         GraphvizDot graphvizDot= new GraphvizDot(context);
         int size= graphvizDot.getEdges().size();
         //exercice
-        graphvizDot.addEdge(context.stmt_list().stmt(0).edge_stmt());
+        graphvizDot.addEdge(context.stmt_list().stmt(8).edge_stmt());
         //verify
         assertEquals(size, graphvizDot.getEdges().size());
         //teardown
@@ -71,8 +71,8 @@ public class GraphvizDotTest {
 
     @Test
     public void edgeEqualsTest() {
-        assertTrue(GraphvizDot.edgeEquals(context.stmt_list().stmt().get(0).edge_stmt(), context.stmt_list().stmt().get(0).edge_stmt()));
-        assertFalse(GraphvizDot.edgeEquals(context.stmt_list().stmt().get(0).edge_stmt(), context.stmt_list().stmt().get(1).edge_stmt()));
+        assertTrue(GraphvizDot.edgeEquals(context.stmt_list().stmt().get(8).edge_stmt(), context.stmt_list().stmt().get(8).edge_stmt()));
+        assertFalse(GraphvizDot.edgeEquals(context.stmt_list().stmt().get(8).edge_stmt(), context.stmt_list().stmt().get(9).edge_stmt()));
     }
 
     @Test
@@ -80,7 +80,20 @@ public class GraphvizDotTest {
         //setup
         GraphvizDot graphvizDot= new GraphvizDot(context);
         //exercice
-        List<GraphvizDotParser.Edge_stmtContext> list=  graphvizDot.getEdges();
+
+        //verify
+        assertNotNull(graphvizDot.toString());
+        System.out.println(graphvizDot.toString());
+        //teardown
+    }
+
+
+    @Test
+    public void toString2Test() {
+        //setup
+        GraphvizDot graphvizDot= new GraphvizDot(context);
+        //exercice
+        graphvizDot.addContext(context);
         //verify
         assertNotNull(graphvizDot.toString());
         System.out.println(graphvizDot.toString());

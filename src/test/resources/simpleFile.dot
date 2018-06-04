@@ -1,4 +1,39 @@
 digraph G {
+ graph [
+    label="Test"
+    labeljust=l
+    labelloc=t
+    fontsize=18
+    fontname="arial"
+    ranksep=1
+    rankdir="TB"
+    nodesep=.05
+  ];
+  node [
+    fontsize=8
+    fontname="arial"
+    shape="rectangle"
+  ];
+  edge [
+    fontsize=8
+    fontname="arial"
+  ];
+  main [
+      fontsize=14.0
+      label=main
+      color="black"
+      fontcolor="black"
+      fillcolor="red"
+      style="solid,filled"
+    ];
+  init [
+      fontsize=14.0
+      label=init
+      color="black"
+      fontcolor="black"
+      fillcolor="white"
+      style="solid,filled"
+    ];
  main -> parse -> execute;
  main -> init;
  main -> cleanup;

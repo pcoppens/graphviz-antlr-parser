@@ -19,6 +19,7 @@ public class DotFileMergeToolsTest {
     public void setUp() throws URISyntaxException {
         files = new ArrayList<>(2);
         files.add(new File(ParserTest.class.getResource(FILENAME).toURI()));
+        files.add(new File(ParserTest.class.getResource(FILENAME).toURI()));
     }
     @Test
     public void mergeAll() throws IOException {

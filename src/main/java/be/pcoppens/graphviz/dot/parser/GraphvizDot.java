@@ -82,7 +82,8 @@ public class GraphvizDot {
         StringBuffer sb= new StringBuffer(graphContext.getText());
         //remove graph header
         int indice= sb.indexOf("{");
-        sb.delete(0, indice);
+        sb.delete(0, indice+1);
+        sb.insert(0, "\n");
         //remove graph footer
         indice= sb.lastIndexOf("}");
         sb.delete(indice, sb.length());
@@ -121,14 +122,7 @@ public class GraphvizDot {
         } );
         sb.append("\n}");
 
-        //hack to add space after key word
-        final String strict= "strict";
-        final String graph= "graph";
-        String result= sb.toString();
-        if(result.contains(strict))
-            result= result.replaceAll(strict, strict+" ");
-        if(result.contains(graph))
-            result= result.replaceAll(graph, graph+" ");
-        return result;
+
+        return sb.toString();
     }
 }

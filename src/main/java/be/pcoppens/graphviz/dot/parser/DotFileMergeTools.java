@@ -10,7 +10,11 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -43,18 +47,23 @@ public class DotFileMergeTools {
         }
     }
 
+    private  final static String getDateTime()
+    {
+        DateFormat df = new SimpleDateFormat("yyyyMMdd_hhmmss");
+        return df.format(new Date());
+    }
 
     /**
      * @effects: merge all dot files in a large dot file named: mergeAll_timestamp.dot
      * @throws IOException: cannot write the file
      */
-    public void mergeAll() {
+    public void mergeAll() throws IOException {
         // add all from the first
         GraphvizDot graphvizDot= new GraphvizDot(contextList.get(0));
         for(int i=1;i<contextList.size();i++){
             graphvizDot.addContext(contextList.get(i));
         }
-
+        write("mergeAll_"+ getDateTime()+".dot", graphvizDot.toString());
     }
 
     /**
