@@ -5,7 +5,7 @@ lexer grammar words;
 COMMENTS        : ('/*' .*? '*/' | '//' ~'\n'* '\n' ) -> skip;
 // Whitespaces -> ignored
 NEWLINE: '\r'? '\n'  -> skip ;
-WS: [ \t]+ -> skip ;
+WS: [ \t]+ -> skip;
 
 STRICT : 'strict';
 GRAPH: 'graph';
@@ -14,10 +14,21 @@ SUBGRAPH: 'subgraph';
 NODE: 'node';
 EDGE: 'edge';
 UNDERSCORE: '_';
+OPEN: '{';
+CLOSE: '}';
+SEMICOLON: ';';
+COMMA: ',';
+DBLPOINT: ':';
+DASH:'--';
+DDASH:'->';
 N: 'n';
 E: 'e';
+NE: 'ne';
 S: 's';
+SE: 'se';
 W: 'w';
+SW: 'sw';
+NW: 'nw';
 C: 'c';
 
 HTML: '<'.*? '>';

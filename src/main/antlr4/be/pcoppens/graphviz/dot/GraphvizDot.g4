@@ -2,13 +2,10 @@ grammar GraphvizDot; //from grammar https://graphviz.gitlab.io/_pages/doc/info/l
 import words;
 //  parser rules
 
-graph	:
-	(STRICT)?
-	(GRAPH|DIGRAPH)WS* (id)?
-	WS*'{' stmt_list '}' EOF ;
+graph : (STRICT)? (GRAPH|DIGRAPH) (id)?	OPEN stmt_list CLOSE EOF ;
 
 stmt_list
-   : ( stmt (';')? )* ;
+   : ( stmt (SEMICOLON)? )* ;
 
 stmt	:
 	node_stmt
@@ -18,15 +15,15 @@ stmt	:
 |	subgraph ;
 attr_stmt	:	(GRAPH | NODE | EDGE) attr_list ;
 attr_list	:	'[' (a_list)? ']' (attr_list)? ;
-a_list	:	id '=' id  (';' | ',')? (a_list)? ;
+a_list	:	id '=' id  (SEMICOLON | COMMA)? (a_list)? ;
 edge_stmt	:	(node_id | subgraph) edgeRHS (attr_list)? ;
-edgeRHS	:	edgeOp (node_id | subgraph) (edgeRHS)? ;
+edgeRHS	:	(DASH |DDASH) (node_id | subgraph) (edgeRHS)? ;
 node_stmt	:	node_id (attr_list)? ;
 node_id	:	id (port)? ;
-port	:	':' id (':' compass_pt)? |	':' compass_pt ;
+port	:	DBLPOINT id (DBLPOINT compass_pt)? | DBLPOINT compass_pt ;
 
-subgraph	:	(SUBGRAPH (id)? )? '{' stmt_list '}' ;
-compass_pt	:	(N | N E | E | S E | S | S W | W | N W | C | UNDERSCORE) ;
-edgeOp: '--' |'->';
+subgraph	:	(SUBGRAPH (id)? )? OPEN stmt_list CLOSE ;
+compass_pt	:	(N | NE | E | SE | S | SW | W | NW | C | UNDERSCORE) ;
+
 id: STRING | NUMERAL | DOUBLE_QUOTED | HTML;
 

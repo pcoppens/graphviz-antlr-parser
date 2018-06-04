@@ -1,0 +1,1853 @@
+digraph dependencies {
+  graph [
+    label="Depedency Graph for Envoi Centralise"
+    labeljust=l
+    labelloc=t
+    fontsize=18
+    fontname="arial"
+    ranksep=1
+    rankdir="TB"
+    nodesep=.05
+  ];
+  node [
+    fontsize=8
+    fontname="arial"
+    shape="rectangle"
+  ];
+  edge [
+    fontsize=8
+    fontname="arial"
+  ];
+  "be.myCompany.eai:envoi-centralise:1.1.0" [
+    fontsize=14.0
+    label="be.myCompany.eai\nenvoi-centralise\nwar\n1.1.0"
+    color="black"
+    fontcolor="black"
+    fillcolor="#dddddd"
+    style="solid,filled"
+  ];
+  "org.springframework.boot:spring-boot-starter-data-jpa:1.5.1.RELEASE" [
+    fontsize=8.0
+    label="org.springframework.boot\nspring-boot-starter-data-jpa\n1.5.1.RELEASE"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.springframework.boot:spring-boot-starter:1.5.1.RELEASE" [
+    fontsize=8.0
+    label="org.springframework.boot\nspring-boot-starter\n1.5.1.RELEASE"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.springframework.boot:spring-boot:1.5.1.RELEASE" [
+    fontsize=8.0
+    label="org.springframework.boot\nspring-boot\n1.5.1.RELEASE"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.springframework:spring-core:4.3.6.RELEASE" [
+    fontsize=8.0
+    label="org.springframework\nspring-core\n4.3.6.RELEASE"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.springframework:spring-context:4.3.6.RELEASE" [
+    fontsize=8.0
+    label="org.springframework\nspring-context\n4.3.6.RELEASE"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.springframework.boot:spring-boot-autoconfigure:1.5.1.RELEASE" [
+    fontsize=8.0
+    label="org.springframework.boot\nspring-boot-autoconfigure\n1.5.1.RELEASE"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.springframework.boot:spring-boot-starter-logging:1.5.1.RELEASE" [
+    fontsize=8.0
+    label="org.springframework.boot\nspring-boot-starter-logging\n1.5.1.RELEASE"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "ch.qos.logback:logback-classic:1.1.9" [
+    fontsize=8.0
+    label="ch.qos.logback\nlogback-classic\n1.1.9"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "ch.qos.logback:logback-core:1.1.9" [
+    fontsize=8.0
+    label="ch.qos.logback\nlogback-core\n1.1.9"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.slf4j:slf4j-api:1.7.22" [
+    fontsize=8.0
+    label="org.slf4j\nslf4j-api\n1.7.22"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.slf4j:jcl-over-slf4j:1.7.22" [
+    fontsize=8.0
+    label="org.slf4j\njcl-over-slf4j\n1.7.22"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.slf4j:jul-to-slf4j:1.7.22" [
+    fontsize=8.0
+    label="org.slf4j\njul-to-slf4j\n1.7.22"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.slf4j:log4j-over-slf4j:1.7.22" [
+    fontsize=8.0
+    label="org.slf4j\nlog4j-over-slf4j\n1.7.22"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.yaml:snakeyaml:1.17" [
+    fontsize=8.0
+    label="org.yaml\nsnakeyaml\n1.17"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.springframework.boot:spring-boot-starter-aop:1.5.1.RELEASE" [
+    fontsize=8.0
+    label="org.springframework.boot\nspring-boot-starter-aop\n1.5.1.RELEASE"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.springframework:spring-aop:4.3.6.RELEASE" [
+    fontsize=8.0
+    label="org.springframework\nspring-aop\n4.3.6.RELEASE"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.springframework:spring-beans:4.3.6.RELEASE" [
+    fontsize=8.0
+    label="org.springframework\nspring-beans\n4.3.6.RELEASE"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.aspectj:aspectjweaver:1.8.9" [
+    fontsize=8.0
+    label="org.aspectj\naspectjweaver\n1.8.9"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.springframework.boot:spring-boot-starter-jdbc:1.5.1.RELEASE" [
+    fontsize=8.0
+    label="org.springframework.boot\nspring-boot-starter-jdbc\n1.5.1.RELEASE"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.apache.tomcat:tomcat-jdbc:8.5.11" [
+    fontsize=8.0
+    label="org.apache.tomcat\ntomcat-jdbc\n8.5.11"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.apache.tomcat:tomcat-juli:8.5.11" [
+    fontsize=8.0
+    label="org.apache.tomcat\ntomcat-juli\n8.5.11"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.springframework:spring-jdbc:4.3.6.RELEASE" [
+    fontsize=8.0
+    label="org.springframework\nspring-jdbc\n4.3.6.RELEASE"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.springframework:spring-tx:4.3.6.RELEASE" [
+    fontsize=8.0
+    label="org.springframework\nspring-tx\n4.3.6.RELEASE"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.hibernate:hibernate-core:5.0.11.Final" [
+    fontsize=8.0
+    label="org.hibernate\nhibernate-core\n5.0.11.Final"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.jboss.logging:jboss-logging:3.3.0.Final" [
+    fontsize=8.0
+    label="org.jboss.logging\njboss-logging\n3.3.0.Final"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final" [
+    fontsize=8.0
+    label="org.hibernate.javax.persistence\nhibernate-jpa-2.1-api\n1.0.0.Final"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.javassist:javassist:3.21.0-GA" [
+    fontsize=8.0
+    label="org.javassist\njavassist\n3.21.0-GA"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "antlr:antlr:2.7.7" [
+    fontsize=8.0
+    label="antlr\nantlr\n2.7.7"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.jboss:jandex:2.0.0.Final" [
+    fontsize=8.0
+    label="org.jboss\njandex\n2.0.0.Final"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "dom4j:dom4j:1.6.1" [
+    fontsize=8.0
+    label="dom4j\ndom4j\n1.6.1"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.hibernate.common:hibernate-commons-annotations:5.0.1.Final" [
+    fontsize=8.0
+    label="org.hibernate.common\nhibernate-commons-annotations\n5.0.1.Final"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.hibernate:hibernate-entitymanager:5.0.11.Final" [
+    fontsize=8.0
+    label="org.hibernate\nhibernate-entitymanager\n5.0.11.Final"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "javax.transaction:javax.transaction-api:1.2" [
+    fontsize=8.0
+    label="javax.transaction\njavax.transaction-api\n1.2"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.springframework.data:spring-data-jpa:1.11.0.RELEASE" [
+    fontsize=8.0
+    label="org.springframework.data\nspring-data-jpa\n1.11.0.RELEASE"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.springframework.data:spring-data-commons:1.13.0.RELEASE" [
+    fontsize=8.0
+    label="org.springframework.data\nspring-data-commons\n1.13.0.RELEASE"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.springframework:spring-orm:4.3.6.RELEASE" [
+    fontsize=8.0
+    label="org.springframework\nspring-orm\n4.3.6.RELEASE"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.springframework:spring-expression:4.3.6.RELEASE" [
+    fontsize=8.0
+    label="org.springframework\nspring-expression\n4.3.6.RELEASE"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.springframework:spring-aspects:4.3.6.RELEASE" [
+    fontsize=8.0
+    label="org.springframework\nspring-aspects\n4.3.6.RELEASE"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.springframework.boot:spring-boot-starter-web:1.5.1.RELEASE" [
+    fontsize=8.0
+    label="org.springframework.boot\nspring-boot-starter-web\n1.5.1.RELEASE"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.springframework.boot:spring-boot-starter-tomcat:1.5.1.RELEASE" [
+    fontsize=8.0
+    label="org.springframework.boot\nspring-boot-starter-tomcat\n1.5.1.RELEASE"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.hibernate:hibernate-validator:5.3.4.Final" [
+    fontsize=8.0
+    label="org.hibernate\nhibernate-validator\n5.3.4.Final"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "javax.validation:validation-api:1.1.0.Final" [
+    fontsize=8.0
+    label="javax.validation\nvalidation-api\n1.1.0.Final"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "com.fasterxml:classmate:1.3.3" [
+    fontsize=8.0
+    label="com.fasterxml\nclassmate\n1.3.3"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "com.fasterxml.jackson.core:jackson-databind:2.8.6" [
+    fontsize=8.0
+    label="com.fasterxml.jackson.core\njackson-databind\n2.8.6"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "com.fasterxml.jackson.core:jackson-annotations:2.8.0" [
+    fontsize=8.0
+    label="com.fasterxml.jackson.core\njackson-annotations\n2.8.0"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "com.fasterxml.jackson.core:jackson-core:2.8.6" [
+    fontsize=8.0
+    label="com.fasterxml.jackson.core\njackson-core\n2.8.6"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.springframework:spring-web:4.3.6.RELEASE" [
+    fontsize=8.0
+    label="org.springframework\nspring-web\n4.3.6.RELEASE"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.springframework:spring-webmvc:4.3.6.RELEASE" [
+    fontsize=8.0
+    label="org.springframework\nspring-webmvc\n4.3.6.RELEASE"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.springframework.boot:spring-boot-starter-thymeleaf:1.5.1.RELEASE" [
+    fontsize=8.0
+    label="org.springframework.boot\nspring-boot-starter-thymeleaf\n1.5.1.RELEASE"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.thymeleaf:thymeleaf-spring4:2.1.5.RELEASE" [
+    fontsize=8.0
+    label="org.thymeleaf\nthymeleaf-spring4\n2.1.5.RELEASE"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.thymeleaf:thymeleaf:2.1.5.RELEASE" [
+    fontsize=8.0
+    label="org.thymeleaf\nthymeleaf\n2.1.5.RELEASE"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "ognl:ognl:3.0.8" [
+    fontsize=8.0
+    label="ognl\nognl\n3.0.8"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.unbescape:unbescape:1.1.0.RELEASE" [
+    fontsize=8.0
+    label="org.unbescape\nunbescape\n1.1.0.RELEASE"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:1.4.0" [
+    fontsize=8.0
+    label="nz.net.ultraq.thymeleaf\nthymeleaf-layout-dialect\n1.4.0"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.codehaus.groovy:groovy:2.4.7" [
+    fontsize=8.0
+    label="org.codehaus.groovy\ngroovy\n2.4.7"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.hibernate:hibernate-java8:5.0.11.Final" [
+    fontsize=8.0
+    label="org.hibernate\nhibernate-java8\n5.0.11.Final"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "com.google.guava:guava:23.0" [
+    fontsize=8.0
+    label="com.google.guava\nguava\n23.0"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "com.google.code.findbugs:jsr305:1.3.9" [
+    fontsize=8.0
+    label="com.google.code.findbugs\njsr305\n1.3.9"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "com.google.errorprone:error_prone_annotations:2.0.18" [
+    fontsize=8.0
+    label="com.google.errorprone\nerror_prone_annotations\n2.0.18"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "com.google.j2objc:j2objc-annotations:1.1" [
+    fontsize=8.0
+    label="com.google.j2objc\nj2objc-annotations\n1.1"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.codehaus.mojo:animal-sniffer-annotations:1.14" [
+    fontsize=8.0
+    label="org.codehaus.mojo\nanimal-sniffer-annotations\n1.14"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "com.h2database:h2:1.4.193" [
+    fontsize=8.0
+    label="com.h2database\nh2\n1.4.193"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.apache.pdfbox:pdfbox:2.0.4" [
+    fontsize=8.0
+    label="org.apache.pdfbox\npdfbox\n2.0.4"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.apache.pdfbox:fontbox:2.0.4" [
+    fontsize=8.0
+    label="org.apache.pdfbox\nfontbox\n2.0.4"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "commons-logging:commons-logging:1.2" [
+    fontsize=8.0
+    label="commons-logging\ncommons-logging\n1.2"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.springframework.boot:spring-boot-starter-test:1.5.1.RELEASE" [
+    fontsize=8.0
+    label="org.springframework.boot\nspring-boot-starter-test\n1.5.1.RELEASE"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.springframework.boot:spring-boot-test:1.5.1.RELEASE" [
+    fontsize=8.0
+    label="org.springframework.boot\nspring-boot-test\n1.5.1.RELEASE"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.springframework.boot:spring-boot-test-autoconfigure:1.5.1.RELEASE" [
+    fontsize=8.0
+    label="org.springframework.boot\nspring-boot-test-autoconfigure\n1.5.1.RELEASE"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "com.jayway.jsonpath:json-path:2.2.0" [
+    fontsize=8.0
+    label="com.jayway.jsonpath\njson-path\n2.2.0"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "net.minidev:json-smart:2.2.1" [
+    fontsize=8.0
+    label="net.minidev\njson-smart\n2.2.1"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "net.minidev:accessors-smart:1.1" [
+    fontsize=8.0
+    label="net.minidev\naccessors-smart\n1.1"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.ow2.asm:asm:5.0.3" [
+    fontsize=8.0
+    label="org.ow2.asm\nasm\n5.0.3"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "junit:junit:4.12" [
+    fontsize=8.0
+    label="junit\njunit\n4.12"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.hamcrest:hamcrest-core:1.3" [
+    fontsize=8.0
+    label="org.hamcrest\nhamcrest-core\n1.3"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.assertj:assertj-core:2.6.0" [
+    fontsize=8.0
+    label="org.assertj\nassertj-core\n2.6.0"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.mockito:mockito-core:1.10.19" [
+    fontsize=8.0
+    label="org.mockito\nmockito-core\n1.10.19"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.objenesis:objenesis:2.1" [
+    fontsize=8.0
+    label="org.objenesis\nobjenesis\n2.1"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.hamcrest:hamcrest-library:1.3" [
+    fontsize=8.0
+    label="org.hamcrest\nhamcrest-library\n1.3"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.skyscreamer:jsonassert:1.4.0" [
+    fontsize=8.0
+    label="org.skyscreamer\njsonassert\n1.4.0"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "com.vaadin.external.google:android-json:0.0.20131108.vaadin1" [
+    fontsize=8.0
+    label="com.vaadin.external.google\nandroid-json\n0.0.20131108.vaadin1"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.springframework:spring-test:4.3.6.RELEASE" [
+    fontsize=8.0
+    label="org.springframework\nspring-test\n4.3.6.RELEASE"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "commons-io:commons-io:2.5" [
+    fontsize=8.0
+    label="commons-io\ncommons-io\n2.5"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.apache.commons:commons-lang3:3.1" [
+    fontsize=8.0
+    label="org.apache.commons\ncommons-lang3\n3.1"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "com.oracle:ojdbc6:11.2.0.3" [
+    fontsize=8.0
+    label="com.oracle\nojdbc6\n11.2.0.3"
+    color="black"
+    fontcolor="black"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "xmlunit:xmlunit:1.6" [
+    fontsize=8.0
+    label="xmlunit\nxmlunit\n1.6"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.apache.tomcat.embed:tomcat-embed-core:8.5.11" [
+    fontsize=8.0
+    label="org.apache.tomcat.embed\ntomcat-embed-core\n8.5.11"
+    color="darkgrey"
+    fontcolor="darkgrey"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.apache.tomcat.embed:tomcat-embed-el:8.5.11" [
+    fontsize=8.0
+    label="org.apache.tomcat.embed\ntomcat-embed-el\n8.5.11"
+    color="darkgrey"
+    fontcolor="darkgrey"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.apache.tomcat.embed:tomcat-embed-websocket:8.5.11" [
+    fontsize=8.0
+    label="org.apache.tomcat.embed\ntomcat-embed-websocket\n8.5.11"
+    color="darkgrey"
+    fontcolor="darkgrey"
+    fillcolor="white"
+    style="solid,filled"
+  ];
+  "org.springframework.boot:spring-boot:1.5.1.RELEASE" -> "org.springframework:spring-core:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.springframework.boot:spring-boot:1.5.1.RELEASE" -> "org.springframework:spring-context:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=20.0
+  ];
+  "org.springframework.boot:spring-boot-starter:1.5.1.RELEASE" -> "org.springframework.boot:spring-boot:1.5.1.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=20.0
+  ];
+  "org.springframework.boot:spring-boot-autoconfigure:1.5.1.RELEASE" -> "org.springframework.boot:spring-boot:1.5.1.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=20.0
+  ];
+  "org.springframework.boot:spring-boot-starter:1.5.1.RELEASE" -> "org.springframework.boot:spring-boot-autoconfigure:1.5.1.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=20.0
+  ];
+  "ch.qos.logback:logback-classic:1.1.9" -> "ch.qos.logback:logback-core:1.1.9" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "ch.qos.logback:logback-classic:1.1.9" -> "org.slf4j:slf4j-api:1.7.22" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.springframework.boot:spring-boot-starter-logging:1.5.1.RELEASE" -> "ch.qos.logback:logback-classic:1.1.9" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=12.0
+  ];
+  "org.slf4j:jcl-over-slf4j:1.7.22" -> "org.slf4j:slf4j-api:1.7.22" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.springframework.boot:spring-boot-starter-logging:1.5.1.RELEASE" -> "org.slf4j:jcl-over-slf4j:1.7.22" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=8.0
+  ];
+  "org.slf4j:jul-to-slf4j:1.7.22" -> "org.slf4j:slf4j-api:1.7.22" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.springframework.boot:spring-boot-starter-logging:1.5.1.RELEASE" -> "org.slf4j:jul-to-slf4j:1.7.22" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=8.0
+  ];
+  "org.slf4j:log4j-over-slf4j:1.7.22" -> "org.slf4j:slf4j-api:1.7.22" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.springframework.boot:spring-boot-starter-logging:1.5.1.RELEASE" -> "org.slf4j:log4j-over-slf4j:1.7.22" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=8.0
+  ];
+  "org.springframework.boot:spring-boot-starter:1.5.1.RELEASE" -> "org.springframework.boot:spring-boot-starter-logging:1.5.1.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=20.0
+  ];
+  "org.springframework.boot:spring-boot-starter:1.5.1.RELEASE" -> "org.springframework:spring-core:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.springframework.boot:spring-boot-starter:1.5.1.RELEASE" -> "org.yaml:snakeyaml:1.17" [
+    label="runtime"
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=2.0
+  ];
+  "org.springframework.boot:spring-boot-starter-data-jpa:1.5.1.RELEASE" -> "org.springframework.boot:spring-boot-starter:1.5.1.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=24.0
+  ];
+  "org.springframework.boot:spring-boot-starter-aop:1.5.1.RELEASE" -> "org.springframework.boot:spring-boot-starter:1.5.1.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=24.0
+  ];
+  "org.springframework:spring-aop:4.3.6.RELEASE" -> "org.springframework:spring-beans:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=8.0
+  ];
+  "org.springframework:spring-aop:4.3.6.RELEASE" -> "org.springframework:spring-core:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.springframework.boot:spring-boot-starter-aop:1.5.1.RELEASE" -> "org.springframework:spring-aop:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=12.0
+  ];
+  "org.springframework.boot:spring-boot-starter-aop:1.5.1.RELEASE" -> "org.aspectj:aspectjweaver:1.8.9" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.springframework.boot:spring-boot-starter-data-jpa:1.5.1.RELEASE" -> "org.springframework.boot:spring-boot-starter-aop:1.5.1.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=24.0
+  ];
+  "org.springframework.boot:spring-boot-starter-jdbc:1.5.1.RELEASE" -> "org.springframework.boot:spring-boot-starter:1.5.1.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=24.0
+  ];
+  "org.apache.tomcat:tomcat-jdbc:8.5.11" -> "org.apache.tomcat:tomcat-juli:8.5.11" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.springframework.boot:spring-boot-starter-jdbc:1.5.1.RELEASE" -> "org.apache.tomcat:tomcat-jdbc:8.5.11" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=8.0
+  ];
+  "org.springframework:spring-jdbc:4.3.6.RELEASE" -> "org.springframework:spring-beans:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=8.0
+  ];
+  "org.springframework:spring-jdbc:4.3.6.RELEASE" -> "org.springframework:spring-core:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.springframework:spring-jdbc:4.3.6.RELEASE" -> "org.springframework:spring-tx:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=12.0
+  ];
+  "org.springframework.boot:spring-boot-starter-jdbc:1.5.1.RELEASE" -> "org.springframework:spring-jdbc:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=16.0
+  ];
+  "org.springframework.boot:spring-boot-starter-data-jpa:1.5.1.RELEASE" -> "org.springframework.boot:spring-boot-starter-jdbc:1.5.1.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=24.0
+  ];
+  "org.hibernate:hibernate-core:5.0.11.Final" -> "org.jboss.logging:jboss-logging:3.3.0.Final" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.hibernate:hibernate-core:5.0.11.Final" -> "org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.hibernate:hibernate-core:5.0.11.Final" -> "org.javassist:javassist:3.21.0-GA" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.hibernate:hibernate-core:5.0.11.Final" -> "antlr:antlr:2.7.7" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.hibernate:hibernate-core:5.0.11.Final" -> "org.jboss:jandex:2.0.0.Final" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.hibernate:hibernate-core:5.0.11.Final" -> "dom4j:dom4j:1.6.1" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.hibernate.common:hibernate-commons-annotations:5.0.1.Final" -> "org.jboss.logging:jboss-logging:3.3.0.Final" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.hibernate:hibernate-core:5.0.11.Final" -> "org.hibernate.common:hibernate-commons-annotations:5.0.1.Final" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=8.0
+  ];
+  "org.springframework.boot:spring-boot-starter-data-jpa:1.5.1.RELEASE" -> "org.hibernate:hibernate-core:5.0.11.Final" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=32.0
+  ];
+  "org.hibernate:hibernate-entitymanager:5.0.11.Final" -> "org.jboss.logging:jboss-logging:3.3.0.Final" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.hibernate:hibernate-entitymanager:5.0.11.Final" -> "org.hibernate:hibernate-core:5.0.11.Final" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=32.0
+  ];
+  "org.hibernate:hibernate-entitymanager:5.0.11.Final" -> "dom4j:dom4j:1.6.1" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.hibernate:hibernate-entitymanager:5.0.11.Final" -> "org.hibernate.common:hibernate-commons-annotations:5.0.1.Final" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=8.0
+  ];
+  "org.hibernate:hibernate-entitymanager:5.0.11.Final" -> "org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.hibernate:hibernate-entitymanager:5.0.11.Final" -> "org.javassist:javassist:3.21.0-GA" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.springframework.boot:spring-boot-starter-data-jpa:1.5.1.RELEASE" -> "org.hibernate:hibernate-entitymanager:5.0.11.Final" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=32.0
+  ];
+  "org.springframework.boot:spring-boot-starter-data-jpa:1.5.1.RELEASE" -> "javax.transaction:javax.transaction-api:1.2" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.springframework.data:spring-data-commons:1.13.0.RELEASE" -> "org.springframework:spring-core:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.springframework.data:spring-data-commons:1.13.0.RELEASE" -> "org.springframework:spring-beans:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=8.0
+  ];
+  "org.springframework.data:spring-data-commons:1.13.0.RELEASE" -> "org.slf4j:slf4j-api:1.7.22" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.springframework.data:spring-data-commons:1.13.0.RELEASE" -> "org.slf4j:jcl-over-slf4j:1.7.22" [
+    label="runtime"
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.springframework.data:spring-data-jpa:1.11.0.RELEASE" -> "org.springframework.data:spring-data-commons:1.13.0.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=20.0
+  ];
+  "org.springframework:spring-orm:4.3.6.RELEASE" -> "org.springframework:spring-beans:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=8.0
+  ];
+  "org.springframework:spring-orm:4.3.6.RELEASE" -> "org.springframework:spring-core:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.springframework:spring-orm:4.3.6.RELEASE" -> "org.springframework:spring-jdbc:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=16.0
+  ];
+  "org.springframework:spring-orm:4.3.6.RELEASE" -> "org.springframework:spring-tx:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=12.0
+  ];
+  "org.springframework.data:spring-data-jpa:1.11.0.RELEASE" -> "org.springframework:spring-orm:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=20.0
+  ];
+  "org.springframework:spring-context:4.3.6.RELEASE" -> "org.springframework:spring-aop:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=12.0
+  ];
+  "org.springframework:spring-context:4.3.6.RELEASE" -> "org.springframework:spring-beans:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=8.0
+  ];
+  "org.springframework:spring-context:4.3.6.RELEASE" -> "org.springframework:spring-core:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.springframework:spring-context:4.3.6.RELEASE" -> "org.springframework:spring-expression:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=8.0
+  ];
+  "org.springframework.data:spring-data-jpa:1.11.0.RELEASE" -> "org.springframework:spring-context:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=20.0
+  ];
+  "org.springframework.data:spring-data-jpa:1.11.0.RELEASE" -> "org.springframework:spring-aop:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=12.0
+  ];
+  "org.springframework:spring-tx:4.3.6.RELEASE" -> "org.springframework:spring-beans:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=8.0
+  ];
+  "org.springframework:spring-tx:4.3.6.RELEASE" -> "org.springframework:spring-core:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.springframework.data:spring-data-jpa:1.11.0.RELEASE" -> "org.springframework:spring-tx:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=12.0
+  ];
+  "org.springframework:spring-beans:4.3.6.RELEASE" -> "org.springframework:spring-core:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.springframework.data:spring-data-jpa:1.11.0.RELEASE" -> "org.springframework:spring-beans:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=8.0
+  ];
+  "org.springframework.data:spring-data-jpa:1.11.0.RELEASE" -> "org.springframework:spring-core:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.springframework.data:spring-data-jpa:1.11.0.RELEASE" -> "org.slf4j:slf4j-api:1.7.22" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.springframework.data:spring-data-jpa:1.11.0.RELEASE" -> "org.slf4j:jcl-over-slf4j:1.7.22" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=8.0
+  ];
+  "org.springframework.boot:spring-boot-starter-data-jpa:1.5.1.RELEASE" -> "org.springframework.data:spring-data-jpa:1.11.0.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=40.0
+  ];
+  "org.springframework:spring-aspects:4.3.6.RELEASE" -> "org.aspectj:aspectjweaver:1.8.9" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.springframework.boot:spring-boot-starter-data-jpa:1.5.1.RELEASE" -> "org.springframework:spring-aspects:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=8.0
+  ];
+  "be.myCompany.eai:envoi-centralise:1.1.0" -> "org.springframework.boot:spring-boot-starter-data-jpa:1.5.1.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=40.0
+  ];
+  "org.springframework.boot:spring-boot-starter-web:1.5.1.RELEASE" -> "org.springframework.boot:spring-boot-starter:1.5.1.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=24.0
+  ];
+  "org.springframework.boot:spring-boot-starter-web:1.5.1.RELEASE" -> "org.springframework.boot:spring-boot-starter-tomcat:1.5.1.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=16.0
+  ];
+  "org.hibernate:hibernate-validator:5.3.4.Final" -> "javax.validation:validation-api:1.1.0.Final" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.hibernate:hibernate-validator:5.3.4.Final" -> "org.jboss.logging:jboss-logging:3.3.0.Final" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.hibernate:hibernate-validator:5.3.4.Final" -> "com.fasterxml:classmate:1.3.3" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.springframework.boot:spring-boot-starter-web:1.5.1.RELEASE" -> "org.hibernate:hibernate-validator:5.3.4.Final" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=16.0
+  ];
+  "com.fasterxml.jackson.core:jackson-databind:2.8.6" -> "com.fasterxml.jackson.core:jackson-annotations:2.8.0" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "com.fasterxml.jackson.core:jackson-databind:2.8.6" -> "com.fasterxml.jackson.core:jackson-core:2.8.6" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.springframework.boot:spring-boot-starter-web:1.5.1.RELEASE" -> "com.fasterxml.jackson.core:jackson-databind:2.8.6" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=12.0
+  ];
+  "org.springframework:spring-web:4.3.6.RELEASE" -> "org.springframework:spring-aop:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=12.0
+  ];
+  "org.springframework:spring-web:4.3.6.RELEASE" -> "org.springframework:spring-beans:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=8.0
+  ];
+  "org.springframework:spring-web:4.3.6.RELEASE" -> "org.springframework:spring-context:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=20.0
+  ];
+  "org.springframework:spring-web:4.3.6.RELEASE" -> "org.springframework:spring-core:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.springframework.boot:spring-boot-starter-web:1.5.1.RELEASE" -> "org.springframework:spring-web:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=20.0
+  ];
+  "org.springframework:spring-webmvc:4.3.6.RELEASE" -> "org.springframework:spring-aop:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=12.0
+  ];
+  "org.springframework:spring-webmvc:4.3.6.RELEASE" -> "org.springframework:spring-beans:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=8.0
+  ];
+  "org.springframework:spring-webmvc:4.3.6.RELEASE" -> "org.springframework:spring-context:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=20.0
+  ];
+  "org.springframework:spring-webmvc:4.3.6.RELEASE" -> "org.springframework:spring-core:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.springframework:spring-expression:4.3.6.RELEASE" -> "org.springframework:spring-core:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.springframework:spring-webmvc:4.3.6.RELEASE" -> "org.springframework:spring-expression:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=8.0
+  ];
+  "org.springframework:spring-webmvc:4.3.6.RELEASE" -> "org.springframework:spring-web:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=20.0
+  ];
+  "org.springframework.boot:spring-boot-starter-web:1.5.1.RELEASE" -> "org.springframework:spring-webmvc:4.3.6.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=28.0
+  ];
+  "be.myCompany.eai:envoi-centralise:1.1.0" -> "org.springframework.boot:spring-boot-starter-web:1.5.1.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=28.0
+  ];
+  "org.springframework.boot:spring-boot-starter-thymeleaf:1.5.1.RELEASE" -> "org.springframework.boot:spring-boot-starter:1.5.1.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=24.0
+  ];
+  "org.springframework.boot:spring-boot-starter-thymeleaf:1.5.1.RELEASE" -> "org.springframework.boot:spring-boot-starter-web:1.5.1.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=28.0
+  ];
+  "org.thymeleaf:thymeleaf:2.1.5.RELEASE" -> "ognl:ognl:3.0.8" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.thymeleaf:thymeleaf:2.1.5.RELEASE" -> "org.javassist:javassist:3.21.0-GA" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.thymeleaf:thymeleaf:2.1.5.RELEASE" -> "org.unbescape:unbescape:1.1.0.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.thymeleaf:thymeleaf:2.1.5.RELEASE" -> "org.slf4j:slf4j-api:1.7.22" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.thymeleaf:thymeleaf-spring4:2.1.5.RELEASE" -> "org.thymeleaf:thymeleaf:2.1.5.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=20.0
+  ];
+  "org.thymeleaf:thymeleaf-spring4:2.1.5.RELEASE" -> "org.slf4j:slf4j-api:1.7.22" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.springframework.boot:spring-boot-starter-thymeleaf:1.5.1.RELEASE" -> "org.thymeleaf:thymeleaf-spring4:2.1.5.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=20.0
+  ];
+  "nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:1.4.0" -> "org.codehaus.groovy:groovy:2.4.7" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:1.4.0" -> "org.thymeleaf:thymeleaf:2.1.5.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=20.0
+  ];
+  "org.springframework.boot:spring-boot-starter-thymeleaf:1.5.1.RELEASE" -> "nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:1.4.0" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=20.0
+  ];
+  "be.myCompany.eai:envoi-centralise:1.1.0" -> "org.springframework.boot:spring-boot-starter-thymeleaf:1.5.1.RELEASE" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=28.0
+  ];
+  "org.hibernate:hibernate-java8:5.0.11.Final" -> "org.jboss.logging:jboss-logging:3.3.0.Final" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.hibernate:hibernate-java8:5.0.11.Final" -> "org.hibernate:hibernate-core:5.0.11.Final" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=32.0
+  ];
+  "be.myCompany.eai:envoi-centralise:1.1.0" -> "org.hibernate:hibernate-java8:5.0.11.Final" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=32.0
+  ];
+  "com.google.guava:guava:23.0" -> "com.google.code.findbugs:jsr305:1.3.9" [
+    label="test"
+    style="solid"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    weight=2.0
+  ];
+  "com.google.guava:guava:23.0" -> "com.google.errorprone:error_prone_annotations:2.0.18" [
+    label="test"
+    style="solid"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    weight=2.0
+  ];
+  "com.google.guava:guava:23.0" -> "com.google.j2objc:j2objc-annotations:1.1" [
+    label="test"
+    style="solid"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    weight=2.0
+  ];
+  "com.google.guava:guava:23.0" -> "org.codehaus.mojo:animal-sniffer-annotations:1.14" [
+    label="test"
+    style="solid"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    weight=2.0
+  ];
+  "be.myCompany.eai:envoi-centralise:1.1.0" -> "com.google.guava:guava:23.0" [
+    label="test"
+    style="solid"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    weight=10.0
+  ];
+  "be.myCompany.eai:envoi-centralise:1.1.0" -> "com.h2database:h2:1.4.193" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.apache.pdfbox:fontbox:2.0.4" -> "commons-logging:commons-logging:1.2" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "org.apache.pdfbox:pdfbox:2.0.4" -> "org.apache.pdfbox:fontbox:2.0.4" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=8.0
+  ];
+  "org.apache.pdfbox:pdfbox:2.0.4" -> "commons-logging:commons-logging:1.2" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "be.myCompany.eai:envoi-centralise:1.1.0" -> "org.apache.pdfbox:pdfbox:2.0.4" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=12.0
+  ];
+  "org.springframework.boot:spring-boot-test:1.5.1.RELEASE" -> "org.springframework.boot:spring-boot:1.5.1.RELEASE" [
+    label="test"
+    style="solid"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    weight=10.0
+  ];
+  "org.springframework.boot:spring-boot-starter-test:1.5.1.RELEASE" -> "org.springframework.boot:spring-boot-test:1.5.1.RELEASE" [
+    label="test"
+    style="solid"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    weight=10.0
+  ];
+  "org.springframework.boot:spring-boot-test-autoconfigure:1.5.1.RELEASE" -> "org.springframework.boot:spring-boot-test:1.5.1.RELEASE" [
+    label="test"
+    style="solid"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    weight=10.0
+  ];
+  "org.springframework.boot:spring-boot-test-autoconfigure:1.5.1.RELEASE" -> "org.springframework.boot:spring-boot-autoconfigure:1.5.1.RELEASE" [
+    label="test"
+    style="solid"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    weight=10.0
+  ];
+  "org.springframework.boot:spring-boot-starter-test:1.5.1.RELEASE" -> "org.springframework.boot:spring-boot-test-autoconfigure:1.5.1.RELEASE" [
+    label="test"
+    style="solid"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    weight=10.0
+  ];
+  "net.minidev:accessors-smart:1.1" -> "org.ow2.asm:asm:5.0.3" [
+    label="test"
+    style="solid"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    weight=2.0
+  ];
+  "net.minidev:json-smart:2.2.1" -> "net.minidev:accessors-smart:1.1" [
+    label="test"
+    style="solid"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    weight=4.0
+  ];
+  "com.jayway.jsonpath:json-path:2.2.0" -> "net.minidev:json-smart:2.2.1" [
+    label="test"
+    style="solid"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    weight=4.0
+  ];
+  "com.jayway.jsonpath:json-path:2.2.0" -> "org.slf4j:slf4j-api:1.7.22" [
+    label="test"
+    style="solid"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    weight=2.0
+  ];
+  "org.springframework.boot:spring-boot-starter-test:1.5.1.RELEASE" -> "com.jayway.jsonpath:json-path:2.2.0" [
+    label="test"
+    style="solid"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    weight=6.0
+  ];
+  "junit:junit:4.12" -> "org.hamcrest:hamcrest-core:1.3" [
+    label="test"
+    style="solid"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    weight=2.0
+  ];
+  "org.springframework.boot:spring-boot-starter-test:1.5.1.RELEASE" -> "junit:junit:4.12" [
+    label="test"
+    style="solid"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    weight=4.0
+  ];
+  "org.springframework.boot:spring-boot-starter-test:1.5.1.RELEASE" -> "org.assertj:assertj-core:2.6.0" [
+    label="test"
+    style="solid"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    weight=2.0
+  ];
+  "org.mockito:mockito-core:1.10.19" -> "org.hamcrest:hamcrest-core:1.3" [
+    label="test"
+    style="solid"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    weight=2.0
+  ];
+  "org.mockito:mockito-core:1.10.19" -> "org.objenesis:objenesis:2.1" [
+    label="test"
+    style="solid"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    weight=2.0
+  ];
+  "org.springframework.boot:spring-boot-starter-test:1.5.1.RELEASE" -> "org.mockito:mockito-core:1.10.19" [
+    label="test"
+    style="solid"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    weight=6.0
+  ];
+  "org.springframework.boot:spring-boot-starter-test:1.5.1.RELEASE" -> "org.hamcrest:hamcrest-core:1.3" [
+    label="test"
+    style="solid"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    weight=2.0
+  ];
+  "org.hamcrest:hamcrest-library:1.3" -> "org.hamcrest:hamcrest-core:1.3" [
+    label="test"
+    style="solid"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    weight=2.0
+  ];
+  "org.springframework.boot:spring-boot-starter-test:1.5.1.RELEASE" -> "org.hamcrest:hamcrest-library:1.3" [
+    label="test"
+    style="solid"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    weight=4.0
+  ];
+  "org.skyscreamer:jsonassert:1.4.0" -> "com.vaadin.external.google:android-json:0.0.20131108.vaadin1" [
+    label="test"
+    style="solid"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    weight=2.0
+  ];
+  "org.springframework.boot:spring-boot-starter-test:1.5.1.RELEASE" -> "org.skyscreamer:jsonassert:1.4.0" [
+    label="test"
+    style="solid"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    weight=4.0
+  ];
+  "org.springframework:spring-test:4.3.6.RELEASE" -> "org.springframework:spring-core:4.3.6.RELEASE" [
+    label="test"
+    style="solid"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    weight=2.0
+  ];
+  "org.springframework.boot:spring-boot-starter-test:1.5.1.RELEASE" -> "org.springframework:spring-test:4.3.6.RELEASE" [
+    label="test"
+    style="solid"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    weight=4.0
+  ];
+  "be.myCompany.eai:envoi-centralise:1.1.0" -> "org.springframework.boot:spring-boot-starter-test:1.5.1.RELEASE" [
+    label="test"
+    style="solid"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    weight=24.0
+  ];
+  "be.myCompany.eai:envoi-centralise:1.1.0" -> "commons-io:commons-io:2.5" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "be.myCompany.eai:envoi-centralise:1.1.0" -> "org.apache.commons:commons-lang3:3.1" [
+    label="test"
+    style="solid"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    weight=2.0
+  ];
+  "be.myCompany.eai:envoi-centralise:1.1.0" -> "com.oracle:ojdbc6:11.2.0.3" [
+    label=""
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "be.myCompany.eai:envoi-centralise:1.1.0" -> "xmlunit:xmlunit:1.6" [
+    label="test"
+    style="solid"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    weight=2.0
+  ];
+  "org.springframework.boot:spring-boot-starter-tomcat:1.5.1.RELEASE" -> "org.apache.tomcat.embed:tomcat-embed-core:8.5.11" [
+    label="provided"
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=2.0
+  ];
+  "org.springframework.boot:spring-boot-starter-tomcat:1.5.1.RELEASE" -> "org.apache.tomcat.embed:tomcat-embed-el:8.5.11" [
+    label="provided"
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=2.0
+  ];
+  "org.apache.tomcat.embed:tomcat-embed-websocket:8.5.11" -> "org.apache.tomcat.embed:tomcat-embed-core:8.5.11" [
+    label="provided"
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=2.0
+  ];
+  "org.springframework.boot:spring-boot-starter-tomcat:1.5.1.RELEASE" -> "org.apache.tomcat.embed:tomcat-embed-websocket:8.5.11" [
+    label="provided"
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=4.0
+  ];
+  "be.myCompany.eai:envoi-centralise:1.1.0" -> "org.springframework.boot:spring-boot-starter-tomcat:1.5.1.RELEASE" [
+    label="provided"
+    style="solid"
+    color="black"
+    fontcolor="black"
+    weight=8.0
+  ];
+  "org.springframework.boot:spring-boot-starter-test:1.5.1.RELEASE" -> "org.springframework:spring-core:4.3.6.RELEASE" [
+    label="test"
+    style="solid"
+    color="cornflowerblue"
+    fontcolor="cornflowerblue"
+    weight=2.0
+  ];
+}
