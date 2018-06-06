@@ -15,6 +15,7 @@ import java.util.List;
  */
 public class GraphvizDot {
     private String data;
+    //it's a set but Edge_stmtContext dot not implement equals
     private List<GraphvizDotParser.Edge_stmtContext> edges= new ArrayList<>();
 
     /**
@@ -33,11 +34,21 @@ public class GraphvizDot {
      * @modifies: add all egdes to edges.
      */
     public GraphvizDot(GraphvizDotParser.GraphContext graphContext){
+        this(graphContext, null, null);
+    }
+
+    /**
+     * @requires: graphContext is not null
+     * @modifies: fill data with graphContext without the edges
+     * @modifies: add all egdes to edges && If source is not null only edge with matched(regex) with source is added
+     *                                  && If target is not null only edge with matched(regex) with target is added
+     */
+    public GraphvizDot(GraphvizDotParser.GraphContext graphContext, String source, String target){
         StringBuffer sb= new StringBuffer(graphContext.getText());
         int indice= sb.lastIndexOf("}");
         sb.delete(indice, sb.length());
         data= sb.toString();
-        addEdges(graphContext.stmt_list().stmt());
+        addEdges(graphContext.stmt_list().stmt(), source, target);
     }
 
     /**
@@ -45,11 +56,42 @@ public class GraphvizDot {
      * @modifies: add all egdes to edges.
      */
     private void addEdges(List<GraphvizDotParser.StmtContext> stmtContexts){
+        addEdges(stmtContexts, null, null);
+    }
+    /**
+     * @requires: stmtContexts is not null
+     * @modifies: add all egdes to edges && If source is not null only edge with matched(regex) with source is added
+     *                                  && If target is not null only edge with matched(regex) with target is added
+     */
+    private void addEdges(List<GraphvizDotParser.StmtContext> stmtContexts, String source, String target){
         stmtContexts.forEach(stmtContext -> {
             if(stmtContext.edge_stmt()!=null ){
                 String tmp= stmtContext.edge_stmt().getText();
                 data=data.replaceFirst(tmp+";", "");
-                addEdge(stmtContext.edge_stmt());
+                //restrict source ?
+                if(source!=null && target==null)
+                {
+                    if( stmtContext.edge_stmt().node_id().id().getText().matches(source)){
+                        addEdge(stmtContext.edge_stmt());
+                    }
+                }
+                else
+                if(source==null && target!=null)
+                {
+                    if( stmtContext.edge_stmt().edgeRHS().node_id().id().getText().matches(target)){
+                        addEdge(stmtContext.edge_stmt());
+                    }
+                }
+                else
+                if(source!=null && target!=null)
+                {
+                    if( stmtContext.edge_stmt().node_id().id().getText().matches(source) &&
+                            stmtContext.edge_stmt().edgeRHS().node_id().id().getText().matches(target)){
+                        addEdge(stmtContext.edge_stmt());
+                    }
+                }
+                else
+                    addEdge(stmtContext.edge_stmt());
             }
         });
     }
@@ -79,6 +121,18 @@ public class GraphvizDot {
      * @modifies: edges: all edges from graphContext if not already exist.
      */
     public void addContext(GraphvizDotParser.GraphContext graphContext){
+        addContext(graphContext, null, null);
+    }
+
+    /**
+     *
+     * @requires graphContext !=null
+     * @modifies: data, add all graphContext content except edges
+     * @modifies: edges: all edges from graphContext if not already exist
+     *                  && If source is not null only edge with matched(regex) with source is added
+     *                  && If target is not null only edge with matched(regex) with target is added
+     */
+    public void addContext(GraphvizDotParser.GraphContext graphContext, String source, String target){
         StringBuffer sb= new StringBuffer(graphContext.getText());
         //remove graph header
         int indice= sb.indexOf("{");
@@ -91,7 +145,7 @@ public class GraphvizDot {
         sb.insert(0, data);
         data= sb.toString();
         //add edges
-        addEdges(graphContext.stmt_list().stmt());
+        addEdges(graphContext.stmt_list().stmt(), source, target);
     }
 
     public GraphvizDot clone() {
@@ -121,7 +175,6 @@ public class GraphvizDot {
             sb.append(";");
         } );
         sb.append("\n}");
-
 
         return sb.toString();
     }

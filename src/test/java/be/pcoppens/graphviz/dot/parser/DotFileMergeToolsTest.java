@@ -21,6 +21,7 @@ public class DotFileMergeToolsTest {
         files.add(new File(ParserTest.class.getResource(FILENAME).toURI()));
         files.add(new File(ParserTest.class.getResource(FILENAME).toURI()));
     }
+
     @Test
     public void mergeAll() throws IOException {
         //setup
@@ -31,19 +32,33 @@ public class DotFileMergeToolsTest {
         //teardown
     }
 
-    @Test
-    public void mergeAllWithPrefix() {
-    }
-
-    @Test
-    public void mergeAllWithTarget() {
-    }
-
-    @Test
-    public void mergeAllWithSource() {
-    }
-
-    @Test
+    @Test(expected = FailureException.class)
     public void repOk() {
+        DotFileMergeTools dotFileMergeTools= new DotFileMergeTools(new ArrayList<>());
     }
+
+    @Test(expected = FailureException.class)
+    public void repOk1() throws URISyntaxException {
+        List<File> myList= new ArrayList<>();
+        myList.add(new File(ParserTest.class.getResource("/log4j2-test.xml").toURI()));
+        DotFileMergeTools dotFileMergeTools= new DotFileMergeTools(myList);
+    }
+
+    @Test()
+    public void repOk2() {
+        DotFileMergeTools dotFileMergeTools= new DotFileMergeTools(files);
+        assertTrue(dotFileMergeTools.repOk());
+    }
+
+
+    @Test
+    public void mergeAllWithPrefix() throws IOException {
+        //setup
+        DotFileMergeTools dotFileMergeTools= new DotFileMergeTools(files);
+        //exercice
+        dotFileMergeTools.mergeAllWithPrefix("main(.*)", null);
+        //verify
+        //teardown
+    }
+
 }

@@ -68,30 +68,19 @@ public class DotFileMergeTools {
 
     /**
      * @effects: merge all dot files in a large dot file named: mergeAllWithPrefix_timestamp.dot.
-     * Only nodes with nodePrefix will be included.
+     *  && Only nodes with start with source will be included
+     *  && Only nodes with start with target as target are included
      * @throws IOException: cannot write the file
      */
-    public void mergeAllWithPrefix(String nodePrefix) {
-
+    public void mergeAllWithPrefix(String source, String target) throws IOException {
+        // add all from the first
+        GraphvizDot graphvizDot= new GraphvizDot(contextList.get(0), source, target);
+        for(int i=1;i<contextList.size();i++){
+            graphvizDot.addContext(contextList.get(i), source, target);
+        }
+        write("mergeAllWithPrefix_"+ getDateTime()+".dot", graphvizDot.toString());
     }
 
-    /**
-     * @effects: merge all dot files in a large dot file named: mergeAllWithTarget_timestamp.dot
-     * Only nodes with nodeTarget as target are included and the nodeTarget.
-     * @throws IOException: cannot write the file
-     */
-    public void mergeAllWithTarget(String nodeTarget) {
-
-    }
-
-    /**
-     * @effects: merge all dot files in a large dot file named: mergeAllWithSource_timestamp.dot
-     * only nodeSource and his targets are included.
-     * @throws IOException: cannot write the file
-     */
-    public void mergeAllWithSource(String nodeSource) {
-
-    }
 
     //IR:
     // contextList !=null && contextList.foreach(o-> o is a valid GraphContext)
