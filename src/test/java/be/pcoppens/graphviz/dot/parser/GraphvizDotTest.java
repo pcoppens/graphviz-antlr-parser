@@ -35,14 +35,14 @@ public class GraphvizDotTest {
     }
 
     @Test
-    public void addEdgeTest() {
+    public void addEdgeWithContextTest() {
         //setup
-        GraphvizDot graphvizDot= new GraphvizDot(context);
+        GraphvizDot graphvizDot= new GraphvizDot(context, "main", null);
         int size= graphvizDot.getEdges().size();
         //exercice
-        graphvizDot.addEdge(context.stmt_list().stmt(8).edge_stmt());
+        graphvizDot.addContext(context, "main", null);
         //verify
-        assertEquals(size, graphvizDot.getEdges().size());
+        System.out.println(graphvizDot.toString());
         //teardown
     }
 
@@ -87,7 +87,6 @@ public class GraphvizDotTest {
         //teardown
     }
 
-
     @Test
     public void toString2Test() {
         //setup
@@ -98,5 +97,11 @@ public class GraphvizDotTest {
         assertNotNull(graphvizDot.toString());
         System.out.println(graphvizDot.toString());
         //teardown
+    }
+
+
+    @Test
+    public void contextTest() {
+        System.out.println(context.getText());
     }
 }

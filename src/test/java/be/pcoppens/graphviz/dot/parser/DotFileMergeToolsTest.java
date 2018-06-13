@@ -13,6 +13,7 @@ import static org.junit.Assert.*;
 
 public class DotFileMergeToolsTest {
     public static final String FILENAME= "/simpleFile.dot";
+    public static final String FILENAME_COMPLEX= "/project-graph.png.dot";
     private List<File> files;
 
     @Before
@@ -24,6 +25,20 @@ public class DotFileMergeToolsTest {
 
     @Test
     public void mergeAll() throws IOException {
+        //setup
+        DotFileMergeTools dotFileMergeTools= new DotFileMergeTools(files);
+        //exercice
+        dotFileMergeTools.mergeAll();
+        //verify
+        //teardown
+    }
+
+
+    @Test
+    public void mergeAllComplex() throws IOException, URISyntaxException {
+        files = new ArrayList<>(2);
+        files.add(new File(ParserTest.class.getResource(FILENAME_COMPLEX).toURI()));
+        files.add(new File(ParserTest.class.getResource(FILENAME_COMPLEX).toURI()));
         //setup
         DotFileMergeTools dotFileMergeTools= new DotFileMergeTools(files);
         //exercice

@@ -82,7 +82,7 @@ public class ParserTest {
     @Test()
     public void walkTest() throws IOException {
         //setup
-        Files.walk(FileSystems.getDefault().getPath("."), Integer.MAX_VALUE).filter(path -> Files.isRegularFile(path) && path.toString().endsWith(".class")).forEach(path -> {
+        Files.walk(FileSystems.getDefault().getPath("."), 1).filter(path -> Files.isDirectory(path) ).forEach(path -> {
             System.out.println(path.toString());
         });
         //teardown
